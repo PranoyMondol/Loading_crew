@@ -26,7 +26,7 @@
             <a href="#gallery">gallery</a>
             <a href="#blogs">blogs</a>
         </nav>
-        <a href="book-form" class="btn">book now</a>
+        <a href="#book-form" class="btn">book now</a>
     </header>
     <!-- header end -->
 
@@ -42,24 +42,27 @@
     </section>
 <!-- home end -->
 
-<!-- booking book -->
+<!-- booking start -->
 <section class="book-form" id="book-form">
-    <form action="">
-        <div class="inputBox">
-            <span>where to</span>
-            <input type="text" placeholder="place name" value="">
-        </div>
-        <div class="inputBox">
-            <span>when</span>
-            <input type="date" value="">
-        </div>
-        <div class="inputBox">
-            <span>how many</span>
-            <input type="number" placeholder="number of travelers" value="">
-        </div>
-        <input type="submit" value="find now" class="btn">
+    <form id="searchForm">
+      <div class="inputBox">
+        <span>where to</span>
+        <input id="placeInput" type="text" placeholder="place name" required>
+      </div>
+  
+      <div class="inputBox">
+        <span>when</span>
+        <input id="dateInput" type="date" required>
+      </div>
+  
+      <div class="inputBox">
+        <span>how many</span>
+        <input id="peopleInput" type="number" placeholder="number of travelers" min="1" required>
+      </div>
+  
+      <input type="submit" value="find now" class="btn">
     </form>
-</section>
+  </section>
 <!-- booking end -->
 
 <!-- about start -->
@@ -75,7 +78,7 @@
     <div class="content">
         <span>Why Travel With Us</span>
         <h3>Discover Bangladesh, The Way It Truly Is</h3>
-        <p>From quiet rivers and endless green hills to vibrant cities and coastal escapes, WayFar helps you experience Bangladesh beyond the  usual routes. We design thoughtful journeys that reflect the country’s natural beauty, rich culture, and everyday life.
+        <p>From quiet rivers and endless green hills to vibrant cities and coastal escapes, TripTonic helps you experience Bangladesh beyond the  usual routes. We design thoughtful journeys that reflect the country’s natural beauty, rich culture, and everyday life.
             Whether you seek peaceful landscapes, heritage destinations, or local experiences, our trips are crafted to feel personal, comfortable, and meaningful — just like home.
             </p>
         <a href="#" class="btn">Explore More</a>
@@ -99,7 +102,7 @@
                 <h3>Beaches & Coastlines</h3>
                 <p>Walk along the longest natural sea beach, watch golden sunsets, and unwind by the Bay of Bengal.
                     Enjoy slow coastal days filled with sea breeze and open horizons.</p>
-                <a href="#">read more <i class="fas fa-angle-right"></i></a>
+                <a href="beaches.html">read more <i class="fas fa-angle-right"></i></a>
             </div>
         </div>
          
@@ -111,7 +114,7 @@
                 <h3>Hill Tracts</h3>
                 <p>Discover scenic hills, lakes, and tribal culture in the Chittagong Hill Tracts.
                     Ideal for nature lovers and quiet adventure seekers.</p>
-                <a href="#">read more <i class="fas fa-angle-right"></i></a>
+                <a href="hill-track.html">read more <i class="fas fa-angle-right"></i></a>
             </div>
         </div>
 
@@ -123,7 +126,7 @@
                 <h3>Rivers & Haors</h3>
                 <p>Journey through Bangladesh’s river life and vast haor regions, where water shapes daily living.
                     Enjoy peaceful boat rides, open skies, and nature at its calmest.</p>
-                <a href="#">read more <i class="fas fa-angle-right"></i></a>
+                <a href="river-haor.html">read more <i class="fas fa-angle-right"></i></a>
             </div>
         </div>
 
@@ -135,7 +138,7 @@
                 <h3>Forests & Wildlife</h3>
                 <p>Discover dense forests, winding waterways, and unique wildlife across protected regions.
                     Experience the raw beauty of nature away from busy cities.</p>
-                <a href="#">read more <i class="fas fa-angle-right"></i></a>
+                <a href="forest-wildlife.html">read more <i class="fas fa-angle-right"></i></a>
             </div>
         </div>
 
@@ -147,7 +150,7 @@
                 <h3>Heritage & History</h3>
                 <p>Walk through ancient ruins, historic cities, and architectural landmarks of Bengal.
                     Each place tells stories shaped by centuries of history.</p>
-                <a href="#">read more <i class="fas fa-angle-right"></i></a>
+                <a href="heritage.html">read more <i class="fas fa-angle-right"></i></a>
             </div>
         </div>
 
@@ -159,7 +162,7 @@
                 <h3>Tea Gardens & Highlands</h3>
                 <p>Wander through endless tea estates, green valleys, and misty landscapes.
                     Sylhet and surrounding regions offer calm and refreshing escapes.</p>
-                <a href="#">read more <i class="fas fa-angle-right"></i></a>
+                <a href="highlands.html">read more <i class="fas fa-angle-right"></i></a>
             </div>
         </div>
 
@@ -171,7 +174,7 @@
                 <h3>Northern Bangladesh</h3>
                 <p>Explore the calm landscapes, historic towns, and open plains of northern Bangladesh.
                     Known for heritage sites, seasonal beauty, and peaceful journeys.</p>
-                <a href="#">read more <i class="fas fa-angle-right"></i></a>
+                <a href="north-bd.html">read more <i class="fas fa-angle-right"></i></a>
             </div>
         </div>
     </div>
