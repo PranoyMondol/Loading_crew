@@ -56,13 +56,24 @@
       </div>
   
       <div class="inputBox">
+        <span>package</span>
+        <select id="packageInput">
+          <option value="">select package</option>
+          <option value="Budget">Budget</option>
+          <option value="Standard">Standard</option>
+          <option value="Premium">Premium</option>
+        </select>
+      </div>
+  
+      <div class="inputBox">
         <span>how many</span>
-        <input id="peopleInput" type="number" placeholder="number of travelers" min="1" required>
+        <input id="peopleInput" type="number" placeholder="number of travelers" min="1" step="1" required>
       </div>
   
       <input type="submit" value="find now" class="btn">
     </form>
   </section>
+  
 <!-- booking end -->
 
 <!-- about start -->
@@ -81,7 +92,7 @@
         <p>From quiet rivers and endless green hills to vibrant cities and coastal escapes, TripTonic helps you experience Bangladesh beyond the  usual routes. We design thoughtful journeys that reflect the country’s natural beauty, rich culture, and everyday life.
             Whether you seek peaceful landscapes, heritage destinations, or local experiences, our trips are crafted to feel personal, comfortable, and meaningful — just like home.
             </p>
-        <a href="#" class="btn">Explore More</a>
+        <a href="#destination" class="btn">Explore More</a>
     </div>
 </section>
 <!-- about end -->
@@ -299,13 +310,34 @@
     <div class="content">
         <span>Reviews</span>
         <h3>What Our Travelers Say</h3>
-        <p>Real stories from people who explored Bangladesh with us, from Cox’s Bazar sunsets to Sylhet’s tea gardens.
+        <div class="review-summary">
+            <div class="summary-stars" aria-label="Overall rating 4.8 out of 5">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star-half-stroke"></i>
+              <span class="summary-score">4.8</span>
+            </div>
+            <div class="summary-meta">2,147 verified reviews</div>
+          </div>          
+        <p>Real experiences from people who explored Bangladesh with us, from Cox’s Bazar sunsets to Sylhet’s tea gardens.
             We focus on comfort, safety, and experiences that feel personal.</p>
     </div>
 
     <div class="box-container">
 
         <div class="box">
+            <div class="review-top">
+                <div class="stars" aria-label="Rating 5 out of 5">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <span class="rating-text">5.0</span>
+              </div>
             <p>“Smooth planning and friendly guides. Cox’s Bazar was perfectly timed for sunset and less crowd.”</p>
             <div class="user">
                  <img src="images/client.jpg" alt="">
@@ -316,6 +348,15 @@
             </div>
         </div>
         <div class="box">
+            <div class="review-top">
+                <div class="stars" aria-label="Rating 4.5 out of 5">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <span class="rating-text">4.5</span>
+              </div>
             <p>“Loved the Sylhet trip. Tea gardens, Jaflong, and local food spots were all included.”</p>
             <div class="user">
                  <img src="images/client1.png" alt="">
@@ -326,6 +367,16 @@
             </div>
         </div>
         <div class="box">
+            <div class="review-top">
+                <div class="stars" aria-label="Rating 4 out of 5">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                </div>
+                <span class="rating-text">4.0</span>
+              </div>
             <p>“Great service from booking to return. They helped us customize the itinerary for family.”</p>
             <div class="user">
                  <img src="images/client1.png" alt="">
@@ -336,6 +387,16 @@
             </div>
         </div>
         <div class="box">
+            <div class="review-top">
+                <div class="stars" aria-label="Rating 5 out of 5">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <span class="rating-text">5.0</span>
+              </div>
             <p>“The Sundarbans tour felt safe and well organized. Boat, meals, and timing were managed nicely.”</p>
             <div class="user">
                  <img src="images/client.jpg" alt="">
@@ -365,7 +426,7 @@
                 <img src="images/blog1.jpg" alt="">
             </div>
             <div class="content">
-                <a href="#" class="link">Sundarbans Travel Guide: What to Pack and What to Expect</a>
+                <a href="blog.html?post=sundarbans" class="link">Sundarbans First Timer Guide: Permits, Packing, and a Realistic 2-Day Plan</a>
             <p>A practical checklist for your forest cruise, including permits, safety tips, and timing.</p>
             <div class="icon">
                 <a href="#"><i class="fa-solid fa-clock"></i>
@@ -383,8 +444,8 @@
                 <img src="images/blog2.jpg" alt="">
             </div>
             <div class="content">
-                <a href="#" class="link">Cox’s Bazar in 2 Days: A Simple, Relaxed Itinerary</a>
-                <p>Where to stay, what to eat, and the best time to enjoy the beach without the rush.</p>
+                <a href="blog.html?post=coxs-bazar-quiet-spots" class="link">Cox’s Bazar Without the Rush: Quiet Spots, Inani Timing, and a Clean 2-Day Flow</a>
+                <p>A calmer itinerary with timing tips to avoid peak crowds and still get the best sunsets.</p>
             <div class="icon">
                 <a href="#"><i class="fa-solid fa-clock"></i>
                     <span>June, 2025</span> 
@@ -401,8 +462,8 @@
                 <img src="images/blog3.jpg" alt="">
             </div>
            <div class="content">
-            <a href="#" class="link">Sylhet Weekend Escape: Tea Gardens, Hills, and River Views</a>
-            <p>The easiest 48-hour plan for families and friends, with calm spots and local food stops.</p>
+            <a href="blog.html?post=sylhet-tea-weekend" class="link">Sylhet Tea Country Weekend: A Calm 48-Hour Route for Tea Gardens and River Views</a>
+            <p>A simple weekend route with a comfortable pace, ideal for families and relaxed travelers.</p>
             <div class="icon">
                 <a href="#"><i class="fa-solid fa-clock"></i>
                     <span>December, 2025</span> 
@@ -512,8 +573,8 @@
     </div>
 </section>
 <div class="credit">
-    © 2025 TripTonic. All rights reserved. <br>
-    Built with ❤️ by TripTonic Team
+    &copy; 2025 TripTonic. All rights reserved. <br>
+    Built with &hearts; by TripTonic Team
 </div>
 <!-- footer ends -->
 
